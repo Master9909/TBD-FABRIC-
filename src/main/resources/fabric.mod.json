@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "mod1",
+  "version": "${version}",
+
+  "name": "Mod1",
+  "description": "This is a test mod!",
+  "authors": [
+    "Master9909"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/mod1/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mod1.Mod1"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.2",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

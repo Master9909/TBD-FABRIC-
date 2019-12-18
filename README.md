@@ -1,8 +1,8 @@
 # TBD-Fabric-
 
-TBD meaning to be decided. The mod is made using Fabric.
-Minecraft Version: 1.15.1
-Note: I'm new to Git, GitHub, Java, and Fabric.
+TBD meaning to be decided. The mod is made using Fabric.  
+Minecraft Version: 1.15.1  
+Note: I'm new to Git, GitHub, Java, and Fabric.  
 
 ## Features
 

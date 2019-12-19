@@ -37,13 +37,13 @@ public class Separator extends Block implements BlockEntityProvider {
         if(blockEntity instanceof SeparatorEntity){
             SeparatorEntity separatorEntity = (SeparatorEntity) blockEntity;
             if(player.inventory.getCursorStack() != null){
-            if(player.inventory.getCursorStack() == new ItemStack(Items.MILK_BUCKET)){
+            if(player.inventory.getCursorStack().getItem() == Items.MILK_BUCKET){
                 if(separatorEntity.addMilk()){
                     player.inventory.setCursorStack(new ItemStack(Items.BUCKET));
                     return ActionResult.SUCCESS;
                 }
             }
-            if(player.inventory.getCursorStack() == new ItemStack(Items.BUCKET)){
+            if(player.inventory.getCursorStack().getItem() ==Items.BUCKET){
                 separatorEntity.removeMilk();
                 player.inventory.setCursorStack(new ItemStack(Items.MILK_BUCKET));
                 return ActionResult.SUCCESS;

@@ -20,7 +20,6 @@ import net.minecraft.world.World;
 
 public class Separator extends Block implements BlockEntityProvider {
 
-  
     public Separator() {
         super(FabricBlockSettings.of(Material.METAL).breakByHand(true).breakByTool(FabricToolTags.PICKAXES, 0)
                 .sounds(BlockSoundGroup.ANVIL).strength(4.0f, 35.0f).build());
@@ -32,21 +31,34 @@ public class Separator extends Block implements BlockEntityProvider {
     }
 
     @Override
+    public boolean isTranslucent(BlockState state, BlockView view, BlockPos pos) {
+        return true;
+    }
+
+    @Override
+    public boolean isSimpleFullBlock(BlockState state, BlockView view, BlockPos pos) {
+        return false;
+    }
+
+    @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         BlockEntity blockEntity = world.getBlockEntity(pos);
         if(blockEntity instanceof SeparatorEntity){
-            SeparatorEntity separatorEntity = (SeparatorEntity) blockEntity;
-            if(player.inventory.getCursorStack() != null){
-            if(player.inventory.getCursorStack().getItem() == Items.MILK_BUCKET){
+            SeparatorEntity separatorEntity = (SeparatorEntity)blockEntity;
+            if(player.getStackInHand(hand).getItem() != null){
+            if(player.getStackInHand(hand).getItem() == Items.MILK_BUCKET){
                 if(separatorEntity.addMilk()){
-                    player.inventory.setCursorStack(new ItemStack(Items.BUCKET));
+                    player.setStackInHand(hand, new ItemStack(Items.BUCKET));
                     return ActionResult.SUCCESS;
                 }
             }
-            if(player.inventory.getCursorStack().getItem() ==Items.BUCKET){
-                separatorEntity.removeMilk();
-                player.inventory.setCursorStack(new ItemStack(Items.MILK_BUCKET));
-                return ActionResult.SUCCESS;
+            else if(player.getStackInHand(hand).getItem() == Items.BUCKET){
+                if(separatorEntity.removeMilk()){
+                    player.getStackInHand(hand).decrement(1);
+                    player.giveItemStack(new ItemStack(Items.MILK_BUCKET));
+                    return ActionResult.SUCCESS;
+                }
+                return ActionResult.FAIL;
             }
             }
         }

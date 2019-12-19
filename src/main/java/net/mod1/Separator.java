@@ -21,7 +21,7 @@ import net.minecraft.world.World;
 public class Separator extends Block implements BlockEntityProvider {
 
     public Separator() {
-        super(FabricBlockSettings.of(Material.METAL).breakByHand(true).breakByTool(FabricToolTags.PICKAXES, 0)
+        super(FabricBlockSettings.of(Material.METAL).nonOpaque().breakByHand(true).breakByTool(FabricToolTags.PICKAXES, 0)
                 .sounds(BlockSoundGroup.ANVIL).strength(4.0f, 35.0f).build());
     }
 

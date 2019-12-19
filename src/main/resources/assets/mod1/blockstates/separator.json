@@ -1,6 +1,6 @@
 {
     "variants": {
-        "": { "model": "mod1:block/separator" },
+        "hasmilk=false": { "model": "mod1:block/separator" },
         "hasmilk=true": { "model": "mod1:block/separatorwithmilk" }
     }
 }

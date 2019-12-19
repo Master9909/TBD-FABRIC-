@@ -6,7 +6,7 @@
 		"2": "mod1:block/separator/bwgd",
 		"3": "mod1:block/separator/glass",
 		"4": "mod1:block/separator/silver",
-		"5": "mod1:block/separatormilk",
+		"5": "mod1:block/separator/milk",
 		"particle": "mod1:block/separator/bwgs"
 	},
 	"elements": [

@@ -1,4 +1,4 @@
-package net.mod1;
+package net.mod1.blocks;
 
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tools.FabricToolTags;
@@ -19,6 +19,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.mod1.SeparatorEntity;
 
 public class Separator extends Block implements BlockEntityProvider {
 
@@ -59,7 +60,7 @@ public class Separator extends Block implements BlockEntityProvider {
             if(player.getStackInHand(hand).getItem() == Items.MILK_BUCKET){
                 if(separatorEntity.addMilk()){
                     player.setStackInHand(hand, new ItemStack(Items.BUCKET));
-                    world.setBlockState(pos, Mod1.SEPARATOR.getDefaultState().with(HASMILK, true));
+                    world.setBlockState(pos, Mod1Blocks.SEPARATOR.getDefaultState().with(HASMILK, true));
                     return ActionResult.SUCCESS;
                 }
             }
@@ -67,7 +68,7 @@ public class Separator extends Block implements BlockEntityProvider {
                 if(separatorEntity.removeMilk()){
                     player.getStackInHand(hand).decrement(1);
                     player.giveItemStack(new ItemStack(Items.MILK_BUCKET));
-                    world.setBlockState(pos, Mod1.SEPARATOR.getDefaultState().with(HASMILK, false));
+                    world.setBlockState(pos, Mod1Blocks.SEPARATOR.getDefaultState().with(HASMILK, false));
                     return ActionResult.SUCCESS;
                 }
                 return ActionResult.FAIL;

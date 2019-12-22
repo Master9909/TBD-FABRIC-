@@ -13,16 +13,20 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/mod1/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
       "net.mod1.Mod1"
+    ],
+    "client": [
+      "net.mod1.client.Mod1Client"
     ]
   },
   "mixins": [
+    "mod1.mixins.json"
   ],
 
   "depends": {

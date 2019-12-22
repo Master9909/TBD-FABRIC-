@@ -1,6 +1,9 @@
 {
+    "itemGroup.mod1.mod1": "Mod1",
+
     "block.mod1.rubyore": "Ruby Ore",
     "block.mod1.sapphireore": "Sapphire Ore",
+    "block.mod1.separator": "Separator",
 
     "item.mod1.ruby": "Ruby",
     "item.mod1.sapphire": "Sapphire"

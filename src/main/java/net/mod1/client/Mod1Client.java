@@ -23,6 +23,8 @@ public class Mod1Client implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putFluid(Mod1Fluids.MILK, RenderLayer.getSolid());
         BlockRenderLayerMap.INSTANCE.putFluid(Mod1Fluids.FLOWING_MILK, RenderLayer.getSolid());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(Mod1Blocks.SEPARATOR, RenderLayer.getTranslucent());
+
         ClientSpriteRegistryCallback.event(SpriteAtlasTexture.BLOCK_ATLAS_TEX).register((texture, registry) -> {
             registry.register(Mod1.id("block/milk_still"));
         });

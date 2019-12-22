@@ -9,7 +9,6 @@ import net.minecraft.client.texture.SpriteAtlasTexture;
 import net.minecraft.resource.ResourceType;
 import net.mod1.Mod1;
 import net.mod1.blocks.Mod1Blocks;
-import net.mod1.client.FluidResourceLoader;
 import net.mod1.fluids.Mod1Fluids;
 
 public class Mod1Client implements ClientModInitializer {

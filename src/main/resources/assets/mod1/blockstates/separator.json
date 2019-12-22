@@ -1,6 +1,12 @@
 {
     "variants": {
-        "hasmilk=false": { "model": "mod1:block/separator" },
-        "hasmilk=true": { "model": "mod1:block/separatorwithmilk" }
+        "hasmilk=false,facing=north": { "model": "mod1:block/separator" },
+        "hasmilk=false,facing=east":  { "model": "mod1:block/separator", "y":  90},
+        "hasmilk=false,facing=south": { "model": "mod1:block/separator", "y": 180 },
+        "hasmilk=false,facing=west":  { "model": "mod1:block/separator", "y": 270 },
+        "hasmilk=true,facing=north": { "model": "mod1:block/separatorwithmilk" },
+        "hasmilk=true,facing=east":  { "model": "mod1:block/separatorwithmilk", "y":  90},
+        "hasmilk=true,facing=south": { "model": "mod1:block/separatorwithmilk", "y": 180 },
+        "hasmilk=true,facing=west":  { "model": "mod1:block/separatorwithmilk", "y": 270 }
     }
 }

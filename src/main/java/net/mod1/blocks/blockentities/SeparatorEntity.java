@@ -1,7 +1,8 @@
-package net.mod1;
+package net.mod1.blocks.blockentities;
 
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.nbt.CompoundTag;
+import net.mod1.Mod1;
 
 public class SeparatorEntity extends BlockEntity {
 

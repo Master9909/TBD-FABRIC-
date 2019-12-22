@@ -11,6 +11,7 @@ import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.mod1.blocks.Mod1Blocks;
+import net.mod1.blocks.blockentities.SeparatorEntity;
 import net.mod1.fluids.Mod1Fluids;
 import net.mod1.items.MilkBucket;
 import net.mod1.items.Mod1Items;

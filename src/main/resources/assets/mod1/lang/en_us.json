@@ -6,5 +6,7 @@
     "block.mod1.separator": "Separator",
 
     "item.mod1.ruby": "Ruby",
-    "item.mod1.sapphire": "Sapphire"
+    "item.mod1.sapphire": "Sapphire",
+
+    "block.mod1.separator.tooltip": "%1$sSeparate Milk into Skim Milk and Cream (BOTH WIP)%2$s"
 }

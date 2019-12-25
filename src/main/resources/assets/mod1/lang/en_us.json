@@ -4,9 +4,12 @@
     "block.mod1.rubyore": "Ruby Ore",
     "block.mod1.sapphireore": "Sapphire Ore",
     "block.mod1.separator": "Separator",
+    "block.mod1.charcoalblock": "Block of Charcoal",
 
     "item.mod1.ruby": "Ruby",
     "item.mod1.sapphire": "Sapphire",
+    "item.mod1.coalchunklet": "Coal Chunklet",
+    "item.mod1.charcoalchunklet": "Charcoal Chunklet",
 
     "block.mod1.separator.tooltip": "%1$sSeparate Milk into Skim Milk and Cream (BOTH WIP)%2$s"
 }

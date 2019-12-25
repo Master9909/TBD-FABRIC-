@@ -15,7 +15,8 @@ public class Mod1Blocks {
 
     public static final Block RUBYORE = register("rubyore", new RubyOre(), new Item.Settings().group(Mod1.MOD1));
     public static final Block SAPPHIREORE = register("sapphireore", new SapphireOre(), new Item.Settings().group(Mod1.MOD1));
-    public static final Block SEPARATOR = register("separator", new Separator(), new Item.Settings().group(Mod1.MOD1));
+	public static final Block SEPARATOR = register("separator", new Separator(), new Item.Settings().group(Mod1.MOD1));
+	public static final Block CHARCOALBLOCK = register("charcoalblock", new CharcoalBlock(), new Item.Settings().group(Mod1.MOD1));
 
     public static final Block MILK_FLUID = register("milk", new MilkFluidBlock(Mod1Fluids.MILK, FabricBlockSettings.of(Material.WATER).noCollision().strength(100.0F, 100f).dropsNothing().build()), (BlockItem) null);
 

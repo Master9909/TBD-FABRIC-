@@ -3,6 +3,7 @@ package net.mod1;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.event.registry.RegistryEntryAddedCallback;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -43,6 +44,10 @@ public class Mod1 implements ModInitializer {
         SEPARATORENTITY = Registry.register(Registry.BLOCK_ENTITY, "mod1:separatorentity", BlockEntityType.Builder.create(SeparatorEntity::new, Mod1Blocks.SEPARATOR).build(null));
 
         Registry.register(Registry.ITEM, Item.getRawId(Items.MILK_BUCKET), "milk_bucket", MILK_BUCKET);
+
+        FuelRegistry.INSTANCE.add(Mod1Items.COALCHUNKLET, 200);
+        FuelRegistry.INSTANCE.add(Mod1Items.CHARCOALCHUNKLET, 200);
+        FuelRegistry.INSTANCE.add(Mod1Blocks.CHARCOALBLOCK, 16000);
 
         Registry.BIOME.forEach(OreGen::handleBiome);
         RegistryEntryAddedCallback.event(Registry.BIOME).register((i, identifier, biome) -> OreGen.handleBiome(biome));

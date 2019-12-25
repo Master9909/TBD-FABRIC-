@@ -101,7 +101,7 @@ public class Separator extends HorizontalFacingBlock implements BlockEntityProvi
 
     @Override
     public void buildTooltip(ItemStack stack, BlockView view, List<Text> tooltip, TooltipContext options) {
-        tooltip.add(new TranslatableText("block.mod1.separator.tooltip", TextFormat.RED));
+        tooltip.add(new TranslatableText("block.mod1.separator.tooltip", TextFormat.RED ));
     }
 
 }

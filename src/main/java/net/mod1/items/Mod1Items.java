@@ -8,6 +8,8 @@ public class Mod1Items {
 
     public static final Item RUBY = register("ruby", new Item(newSettings()));
 	public static final Item SAPPHIRE = register("sapphire", new Item(newSettings()));
+	public static final Item COALCHUNKLET = register("coalchunklet", new Item(newSettings()));
+	public static final Item CHARCOALCHUNKLET = register("charcoalchunklet", new Item(newSettings()));
 
     static Item.Settings newSettings() {
 		return new Item.Settings().group(Mod1.MOD1);

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "mod1:sapphire"
+        }
+    },
+    "result": {
+        "item": "mod1:sapphirechestplate",
+        "count": 1
+    }
+}

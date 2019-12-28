@@ -10,6 +10,14 @@
     "item.mod1.sapphire": "Sapphire",
     "item.mod1.coalchunklet": "Coal Chunklet",
     "item.mod1.charcoalchunklet": "Charcoal Chunklet",
+    "item.mod1.rubyhelmet": "Ruby Helmet",
+    "item.mod1.rubychestplate": "Ruby Chestplate",
+    "item.mod1.rubyleggings": "Ruby Leggings",
+    "item.mod1.rubyboots": "Ruby Boots",
+    "item.mod1.sapphirehelmet": "Sapphire Helmet",
+    "item.mod1.sapphirechestplate": "Sapphire Chestplate",
+    "item.mod1.sapphireleggings": "Sapphire Leggings",
+    "item.mod1.sapphireboots": "Sapphire Boots",
 
     "block.mod1.separator.tooltip": "%1$sSeparate Milk into Skim Milk and Cream (BOTH WIP)%2$s"
 }

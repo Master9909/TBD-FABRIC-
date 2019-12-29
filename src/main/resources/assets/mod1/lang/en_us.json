@@ -18,6 +18,16 @@
     "item.mod1.sapphirechestplate": "Sapphire Chestplate",
     "item.mod1.sapphireleggings": "Sapphire Leggings",
     "item.mod1.sapphireboots": "Sapphire Boots",
+    "item.mod1.rubypickaxe": "Ruby Pickaxe",
+    "item.mod1.sapphirepickaxe": "Sapphire Pickaxe",
+    "item.mod1.rubyaxe": "Ruby Axe",
+    "item.mod1.sapphireaxe": "Sapphire Axe",
+    "item.mod1.rubyshovel": "Ruby Shovel",
+    "item.mod1.sapphireshovel": "Sapphire Shovel",
+    "item.mod1.rubyhoe": "Ruby Hoe",
+    "item.mod1.sapphirehoe": "Sapphire Hoe",
+    "item.mod1.rubysword": "Ruby Sword",
+    "item.mod1.sapphiresword": "Sapphire Sword",
 
     "block.mod1.separator.tooltip": "%1$sSeparate Milk into Skim Milk and Cream (BOTH WIP)%2$s"
 }
